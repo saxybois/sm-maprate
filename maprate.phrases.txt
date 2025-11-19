@@ -1,0 +1,8 @@
+"Phrases"
+{
+	"Tag"
+	{
+		"en"	"{snow}[{darkorange}M{sandybrown}M{wheat}T{dimgrey}F{snow}]{default}"
+		"ru"	"{snow}[{darkorange}M{sandybrown}M{wheat}T{dimgrey}F{snow}]{default}"
+	}
+}

@@ -2,7 +2,131 @@
 {
 	"Tag"
 	{
-		"en"	"{snow}[{darkorange}M{sandybrown}M{wheat}T{dimgrey}F{snow}]{default}"
-		"ru"	"{snow}[{darkorange}M{sandybrown}M{wheat}T{dimgrey}F{snow}]{default}"
+		"en"	"{green}[Map Rate]{default}"
+		"ru"	"{green}[Оценка Карты]{default}"
+	}
+	
+	// rates
+	"None"
+	{
+		"en"	"None"
+		"ru"	"Отсутствует"
+	}
+	
+	"Terrible"
+    {
+		"en"	    "Terrible"
+  		"ru"		"Ужасная"
+    }
+	
+	"Terrible Spaces"
+    {
+		"en"	    "   "
+  		"ru"		"  "
+    }
+	
+	"Poor"
+    {
+		"en"	    "Poor"
+  		"ru"		"Плохая"
+    }
+	
+	"Poor Spaces"
+    {
+		"en"	    "      "
+  		"ru"		"    "
+    }
+	
+	"Average"
+    {
+		"en"	    "Average"
+  		"ru"		"Средняя"
+    }
+	
+	"Average Spaces"
+    {
+		"en"	    "  "
+  		"ru"		"  "
+    }
+	
+	"Good"
+    {
+		"en"	    "Good"
+  		"ru"		"Хорошая"
+    }
+	
+	"Good Spaces"
+    {
+		"en"	    "       "
+  		"ru"		"  "
+    }
+	
+	"Excellent"
+    {
+		"en"	    "Excellent"
+  		"ru"		"Отличная"
+    }
+	
+	"Excellent Spaces"
+    {
+		"en"	    ""
+  		"ru"		" "
+    }
+	
+	//menu
+	"Menu Title Rated"
+	{
+		"#format" 	"{1:.2f},{2:s}"
+		
+		"en"		"[{1}] {2}\n "
+		"ru"		"[{1}] {2}\n "
+	}
+	
+	"Menu Title Rating"
+	{
+		"#format" 	"{1:s}"
+		
+		"en"		"Rating map {1}\n \nBe careful while vote!\nThe future of the map on the server depends on it!\n "
+		"ru"		"Оценка локации {1}\n \nГолосуй с умом!\nОт этого зависит будущее карты на сервере!\n "
+	}
+	
+	"Menu Item Client Rate"
+	{
+		"#format" 	"{1:T}"
+		
+		"en"		"Your rate: {1}"
+		"ru"		"Твоя оценка: {1}"
+	}
+	
+	"Menu Item Rate Map"
+	{
+		"en" 		"Rate map"
+		"ru"		"Оценить локацию"
+	}
+	
+	// notifs
+	"Success Map Rate"
+	{
+		"#format"	"{1:s},{2:T}"
+	
+		"en"		"You have successfully rated {gold}{1}{default} as {aqua}{2}{default}!"
+		"ru"		"Ты успешно оценил {gold}{1}{default} как {aqua}{2}{default}!"
+	}
+	"Plugin Still Getting Data"
+	{
+		"en"		"The plugin is still getting ratings, try rating the map later!"
+		"ru"		"Оценки ещё не загружены , попробуй оценить локацию позже!"
+	}
+	
+	//MMTF menu
+	"MMTF Map Rate"
+	{
+		"en"	"Rate map"
+		"ru"	"Оценить локацию"
+	}
+	"MMTF Check Map Rate"
+	{
+		"en"	"Check map rate"
+		"ru"	"Узнать оценки локации"
 	}
 }

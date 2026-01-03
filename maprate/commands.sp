@@ -3,6 +3,7 @@ void CommandsInit()
 	RegConsoleCmd("sm_maprate", OpenRateMenu, "Opens the menu for rating the current map");
 	RegConsoleCmd("sm_maprating", OpenRateMenu, "Opens the menu for rating the current map");
 
+	RegAdminCmd("sm_forcemaprate", ForceRateMenu, ADMFLAG_CHANGEMAP, "Opens the menu for rating the current map for all players");
 	RegAdminCmd("sm_maprate_reset", ResetData, ADMFLAG_CHEATS, "Clear the plugin's memory and retrieve the data again");
 	RegServerCmd("sm_maprates", ShowMapRates);
 }
@@ -10,6 +11,19 @@ void CommandsInit()
 Action OpenRateMenu(int client, int args)
 {
 	RateMenu(client);
+	
+	return Plugin_Handled;
+}
+
+Action ForceRateMenu(int client, int args)
+{
+	for (int i = 1; i <= MaxClients; i++)
+	{
+		if (IsClientInGame(i))
+		{
+			RateMenu(i);
+		}
+	}
 	
 	return Plugin_Handled;
 }
